@@ -23,7 +23,7 @@ const Home = () => {
     >
       <div className="w-full h-full text-white flex pt-40 mx-auto container">
         <div className=" md:flex-1">
-          <h1 className=' text-4xl md:text-6xl font-bold hover:scale-95 duration-300 transition-all hover:text-amber-900'>👋 Hey there, I'm HamaN</h1>
+          <h1 className=' text-3xl md:text-4xl font-bold hover:scale-95 duration-300 transition-all hover:text-amber-900'>👋 Hey there, I'm HamaN</h1>
           <br /> <br />
           <div className="">
             <p

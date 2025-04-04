@@ -16,7 +16,7 @@ const HireMe = () => {
             Contact Me
           </a>
           <a
-            href="/Haman_Resume.pdf"
+            href="https://app.luminpdf.com/viewer/67efb54158255d03fb81a859"
             target="_blank"
             className="border border-[#eb5951] text-[#eb5951] px-6 py-3 rounded-lg hover:bg-[#eb5951] hover:text-white transition duration-300"
           >
