@@ -23,7 +23,7 @@ const Home = () => {
     >
       <div className="w-full h-full text-white flex pt-40 mx-auto container">
         <div className=" md:flex-1">
-          <h1 className=' text-3xl md:text-4xl font-bold hover:scale-95 duration-300 transition-all hover:text-amber-900'>👋 Hey there, I'm HamaN</h1>
+          <h1 className=' text-3xl md:text-4xl font-bold hover:scale-95 duration-300 transition-all hover:text-amber-900 '>👋 Hey there, I'm HamaN</h1>
           <br /> <br />
           <div className="">
             <p
@@ -44,7 +44,7 @@ const Home = () => {
 
             <button>
               <a
-                href="https://app.luminpdf.com/viewer/67efb54158255d03fb81a859"
+                href="https://docs.google.com/document/d/1LEB3VvFbC0_s2Zc_kqKgEZfc9HY_DidDSHnarmNwKBU/edit?usp=sharing"
                 download
                 className="px-6 py-2 border-2 border-[#2E8B57] text-[#2E8B57] bg-transparent rounded-lg font-medium hover:bg-[#2E8B57] hover:text-white transition-all duration-300"
               >
