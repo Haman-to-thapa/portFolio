@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 
 const About = () => {
   return (
@@ -129,12 +131,12 @@ const About = () => {
         <div className="mt-16 pt-8 border-t border-gray-200 dark:border-gray-800">
           <p className="text-xl text-gray-800 dark:text-gray-200">
             Wanna build something cool together? <br />
-            <a
+            <Link
               href="/contact"
               className="inline-block mt-4 text-black dark:text-white font-bold border-b-2 border-black dark:border-white hover:opacity-70 transition-opacity"
             >
               Let's Talk →
-            </a>
+            </Link>
           </p>
         </div>
 
