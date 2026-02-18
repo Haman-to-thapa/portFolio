@@ -49,31 +49,31 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#080808] text-white flex items-center justify-center p-6 sm:p-12">
+    <section className="min-h-screen bg-white dark:bg-black text-gray-900 dark:text-gray-200 flex items-center justify-center p-6 sm:p-12 transition-colors duration-300">
       <div className="max-w-2xl w-full">
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-center">Let’s Work Together 👋</h2>
-        <p className="text-gray-400 mb-10 text-center">
+        <h2 className="text-4xl font-bold mb-6 text-center text-gray-900 dark:text-white">Let’s Work Together 👋</h2>
+        <p className="text-gray-600 dark:text-gray-400 mb-12 text-center text-lg font-light">
           Got a project idea or just want to say hi? I’m always open to exciting new opportunities and collaborations. Reach out below!
         </p>
 
         {/* Contact Info */}
-        <div className="text-gray-300 text-center space-y-3 mb-10">
+        <div className="text-gray-600 dark:text-gray-400 text-center space-y-4 mb-12">
           <p>
-            📧 Email:
-            <a href="mailto:hamanthapa0000@gamil.com" className="text-blue-400 hover:underline ml-1">
-              hamanthapa00000@gamil.com
+            <span className="font-semibold text-gray-900 dark:text-white">Email:</span>
+            <a href="mailto:hamanthapa00000@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline ml-2">
+              hamanthapa00000@gmail.com
             </a>
           </p>
           <p>
-            💻 GitHub:
-            <a href="https://github.com/Haman-to-thapa" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline ml-1">
+            <span className="font-semibold text-gray-900 dark:text-white">GitHub:</span>
+            <a href="https://github.com/Haman-to-thapa" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline ml-2">
               github.com/Haman-to-thapa
             </a>
           </p>
           <p>
-            💼 LinkedIn:
-            <a href="http://linkedin.com/in/haman-thapa-44658034b" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline ml-1">
+            <span className="font-semibold text-gray-900 dark:text-white">LinkedIn:</span>
+            <a href="https://linkedin.com/in/haman-thapa-44658034b" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline ml-2">
               linkedin.com/in/haman-thapa-44658034b
             </a>
           </p>
@@ -83,14 +83,14 @@ const Contact = () => {
         <form
           action="https://formsubmit.co/c4e93bdd868b062c5302f7d1e19aca95"
           method="POST"
-          onSubmit={handleSubmit} className="space-y-5">
+          onSubmit={handleSubmit} className="space-y-6">
           <input
             type="text"
             name="name"
             value={formData.name}
             onChange={handleInputChange}
             placeholder="Your Name"
-            className="w-full bg-[#1f1f1f] p-3 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#eb5951]"
+            className="w-full bg-gray-50 dark:bg-gray-900 p-4 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 border border-gray-200 dark:border-gray-800 focus:outline-none focus:border-black dark:focus:border-white transition-colors"
             required
           />
           <input
@@ -99,7 +99,7 @@ const Contact = () => {
             value={formData.email}
             onChange={handleInputChange}
             placeholder="Your Email"
-            className="w-full bg-[#1f1f1f] p-3 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#eb5951]"
+            className="w-full bg-gray-50 dark:bg-gray-900 p-4 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 border border-gray-200 dark:border-gray-800 focus:outline-none focus:border-black dark:focus:border-white transition-colors"
             required
           />
           <textarea
@@ -107,24 +107,24 @@ const Contact = () => {
             value={formData.message}
             onChange={handleInputChange}
             placeholder="Your Message"
-            rows="4"
-            className="w-full bg-[#1f1f1f] p-3 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#eb5951]"
+            rows="5"
+            className="w-full bg-gray-50 dark:bg-gray-900 p-4 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 border border-gray-200 dark:border-gray-800 focus:outline-none focus:border-black dark:focus:border-white transition-colors resize-none"
             required
           />
           <button
             type="submit"
-            className="bg-[#eb5951] text-white py-2 px-6 rounded-lg hover:bg-[#d44c44] transition-all duration-300 w-full"
+            className="bg-black dark:bg-white text-white dark:text-black font-bold py-4 px-8 rounded-lg hover:opacity-80 transition-all duration-300 w-full"
           >
             Send Message
           </button>
 
           {/* Status Message */}
           {status && (
-            <p className="text-center mt-4 text-sm text-green-400">{status}</p>
+            <p className={`text-center mt-4 text-sm ${status.includes('✅') ? 'text-green-600 dark:text-green-400' : 'text-red-600 dark:text-red-400'}`}>{status}</p>
           )}
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 

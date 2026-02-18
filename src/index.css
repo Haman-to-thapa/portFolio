@@ -1,6 +1,23 @@
 @import "tailwindcss";
 
+/* Tailwind CSS v4 Dark Mode Configuration */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-white text-gray-900 dark:bg-black dark:text-gray-100 transition-colors duration-500 ease-in-out antialiased;
+  }
+}
+
 @theme {
+  --color-brand: #000000;
+  --color-brand-dark: #ffffff;
+
+  /* Retaining original custom colors just in case */
   --color-midnight: #121063;
   --color-tahiti: #3ab7bf;
   --color-bermuda: #78dcca;
